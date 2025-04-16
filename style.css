@@ -1,0 +1,251 @@
+/* Google Fonts Bağlantı */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root */
+:root{
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    padding-top: 76px;
+}
+
+/* <!-- ! Header Start --> */
+
+.navbar{
+    background-color: var(--primary-color) !important;
+    padding: 1rem;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-brand i{
+    color: var(--secondary-color);
+}
+
+.nav-link{
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover{
+    color: var(--secondary-color);
+}
+
+/*! Home Start */
+
+#home{
+    height: 80vh;
+}
+
+#home h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#home p{
+    font-size: 1.2rem;
+}
+
+#home button{
+    font-weight: bold;
+}
+
+.carousel{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item .w-100{
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.399),
+        rgba(0, 0, 0, 0.399)
+    );
+    position: absolute;
+}
+
+.carousel-caption{
+    margin-bottom: 5rem;
+}
+
+.carousel-indicators button{
+    width: 40px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: whitered !important;
+}
+
+.carousel-control-prev-icon{
+  width: 4rem !important;
+  height: 4rem !important;
+  opacity: .8;
+}
+
+.carousel-control-next-icon{
+    width: 4rem !important;
+    height: 4rem !important;
+    opacity: .8;
+}
+
+/* Popular Crypto Section Start */
+
+.section-card{
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.section-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.section-card .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.section-card .icon i{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.section-card .card-title{
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.section-card .price{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* Features Section Start */
+
+#features{
+    background-color: var(--light-bg);
+}
+/* Testimonial Section Start */
+
+.section-card .top i{
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.section-card .card-body .rating{
+    color: #E8AA34;
+}
+
+/* News Section Start */
+#news{
+    background-color: var(--light-bg);
+}
+.news-card{
+    border: none;
+    border-radius: 20px !important;
+    cursor: pointer;
+}
+.news-image img{
+    transition: all 0.5s ease !important;
+}
+
+.news-card:hover .news-image img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.news-image{
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.news-category{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.contact-container h3{
+    white-space: nowrap;
+}
+
+.contact-container form textarea{
+    resize: none;
+}
+
+.info-item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    margin-right: 5rem;
+}
+
+.info-item i{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.container h3 i{
+    color: var(--secondary-color);
+}
