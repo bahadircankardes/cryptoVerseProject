@@ -14,6 +14,7 @@
 
 - HTML5 for structured content
 - CSS3 for styling and responsive design
+- Bootstrap 5 – Used for responsive layout, prebuilt UI components (like navbar, buttons, grid system), and faster development.
 
 
 # 📧 Contact
